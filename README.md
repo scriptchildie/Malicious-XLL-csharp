@@ -1,4 +1,4 @@
-# Malicious-XLL-c-
+# Malicious-XLL-csharp
 Malicious excel Plugin (xll) writen in c#
 
 * XLL Downloads a triple-XOR encoded payload. 
