@@ -10,9 +10,8 @@ The code included two functions:
 * DownloadAndInject(1231) - Downloads and injects the shellcode to the process with the provided PID
 
 Encoder code is not really polished. When it's done with execution it generates 7 files with names 0 1 2 3 4 5 6
-cat 0 1 2 3 4 5 6 > encoded.bin 
-
-Host the encoded.bin file on a webserver for the xll to download.
+* cat 0 1 2 3 4 5 6 > encoded.bin 
+* Host the encoded.bin file on a webserver for the xll to download.
 
 As of 31/07/2022 runs undetected by Defender for Endpoint (used both sliver and metasploit)
 
