@@ -8,3 +8,5 @@ Malicious excel Plugin (xll) writen in c#
 As of 31/07/2022 runs undetected by Defender for Endpoint (used both sliver and metasploit)
 
 
+A good guide on how to write an excel plugin.
+https://bettersolutions.com/csharp/excel-interop/excel-dna-getting-started.htm
